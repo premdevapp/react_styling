@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Person from "./Person/Person";
-import Radium, { StyleRoot } from "radium";
 
 class App extends Component {
   state = {
@@ -97,7 +96,7 @@ class App extends Component {
         <header className="App-header">
           <p>Hi i am REACT app</p>
           <p className={classes.join(" ")}>This is really working</p>
-          <StyleRoot>{Persons}</StyleRoot>
+          {Persons}
           <button style={styles} onClick={this.togglePersonsHandler}>
             Toggle Show
           </button>
@@ -107,4 +106,4 @@ class App extends Component {
   }
 }
 
-export default Radium(App);
+export default App;
